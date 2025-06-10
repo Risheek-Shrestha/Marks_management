@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>ResultSystem</display-name>
+	<welcome-file-list>
+		<welcome-file>Register.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoadStudent</servlet-name>
+		<servlet-class>LoadStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadStudent</servlet-name>
+		<url-pattern>/LoadStudent</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddMarks</servlet-name>
+		<servlet-class>AddMarks</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddMarks</servlet-name>
+		<url-pattern>/AddMarks</url-pattern>
+	</servlet-mapping>
+</web-app>
+
